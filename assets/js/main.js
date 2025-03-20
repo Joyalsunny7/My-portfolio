@@ -1,10 +1,4 @@
-/**
-* Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -304,7 +298,7 @@ function validateMessage() {
 }
 function validatePhone() {
     var phone = document.getElementById('contact-phone').value;
-    var phoneError = document.getElementById('phone-error'); // Ensure this ID is correct
+    var phoneError = document.getElementById('phone-error'); 
 
     if(phone.length == 0) {
         phoneError.innerHTML = 'Phone number is required';
@@ -347,7 +341,7 @@ function validateForm(){
         e.preventDefault()
         if (validateForm()){
         $.ajax({
-          url: "https://script.google.com/macros/s/AKfycbyq7UhgjaI1a3iFXejfLl-gDcU_yQ-wCOIkh01UYb6KPGz-2A6Go0nt5sIsLtRrR7a9/exec",
+          url: "https://script.google.com/macros/s/AKfycbw7nKdOg6U2xqKa3WWsRZqVajuE8PoqCmZuUR6FnvowIhin5yz-2_51u-FkN7YP3o-6/exec",
           data: $("#submit-form").serialize(),
           method: "post",
           success: function (response) {
@@ -361,5 +355,6 @@ function validateForm(){
         });
       }
       })
-    }) 
-    
+    })
+    
+    
